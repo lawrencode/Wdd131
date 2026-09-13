@@ -1,1 +1,78 @@
+/* Large Screen Responsive Design */
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
+/* Tablet/Medium Screen */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    figure img {
+        height: 200px;
+    }
+}
+
+/* Small Screen/Mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+
+    figure img {
+        height: 180px;
+    }
+
+    figcaption {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+}

@@ -1,1 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse a curated collection of beautiful temples from around the world.">
+  <meta name="author" content="Lawren Talamaivao">
+  <title>Temple Album</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 48em)">
+
+  <!-- Deferred JavaScript -->
+  <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">Temple Album</div>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="#old">Old</a>
+      <a href="#new">New</a>
+      <a href="#large">Large</a>
+      <a href="#small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <!-- At least nine figure elements with placeholder images and captions -->
+    <section class="temples">
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hawaii-temple.jpg" alt="Hawaii Temple">
+        <figcaption>Hawaii Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mesa-temple.jpg" alt="Mesa Temple">
+        <figcaption>Mesa Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="San Diego Temple">
+        <figcaption>San Diego Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/hamilton-temple.jpg" alt="Hamilton Temple">
+        <figcaption>Hamilton Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/samoa-temple.jpg" alt="Samoa Temple">
+        <figcaption>Samoa Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/ghana-temple.jpg" alt="Ghana Temple">
+        <figcaption>Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/thailand-temple.jpg" alt="Thailand Temple">
+        <figcaption>Thailand Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/london-temple.jpg" alt="London Temple">
+        <figcaption>London Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Lawren Talamaivao</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+    <p><a href="privacy.html">Privacy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>

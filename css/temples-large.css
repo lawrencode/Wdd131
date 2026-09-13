@@ -1,0 +1,64 @@
+/* css/temples-large.css - larger-screen overrides */
+
+/* Tablet and up: 48em (~768px) */
+@media screen and (min-width: 48em) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Two-column grid on tablets */
+  .temples {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.95rem;
+  }
+}
+
+/* Desktop and up: 64em (~1024px) */
+@media screen and (min-width: 64em) {
+  .container {
+    padding: 2rem;
+  }
+
+  header {
+    padding: 1.25rem 2rem;
+  }
+
+  /* Three-column grid on desktop */
+  .temples {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Give card images a consistent height for a tidy grid */
+  figure img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  figcaption {
+    padding: 0.9rem;
+  }
+
+  nav ul {
+    gap: 0.75rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.85rem;
+  }
+}
